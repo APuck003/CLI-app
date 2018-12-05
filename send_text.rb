@@ -6,7 +6,7 @@ def get_text
 
   contact = Contact.find_or_create_by(name: name)
   message = Message.create(content: message)
-  user = User.create(contact_id: contact, message_id: message)
+  user = User.create(contact_id: contact.id, message_id: message.id)
   contact.save
   message.save
   user.save
