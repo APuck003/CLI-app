@@ -17,7 +17,6 @@ def get_message
 end
 
 def execute_text
-  binding.pry
   message1 = Message.create(content: $message)
   $all_names.each do |name|
     contact = Contact.find_or_create_by(name: name)
@@ -35,9 +34,5 @@ def send_text
   get_message
   execute_text
 end
-
-def send_multiple_texts
-end
-
 
 send_text

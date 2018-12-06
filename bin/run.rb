@@ -2,7 +2,7 @@ require_relative '../config/environment'
 
 
 
-puts "HELLO WORLD"
+puts "Message Sent"
 
 # Write the methods that see data
 # Either send text or see data          or view calendar
