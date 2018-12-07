@@ -1,7 +1,6 @@
 require_relative '../config/environment'
 
 
-
 puts "Message Sent"
 
 # Write the methods that see data

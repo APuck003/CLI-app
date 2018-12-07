@@ -1,5 +1,6 @@
 $all_names = []
 $message = ""
+
 def get_name
   puts "Enter full name of contact: "
   name = gets.chomp
@@ -29,7 +30,12 @@ def execute_text
   end
 end
 
+def title
+  system("artii 'Texter' --font banner3-D | lolcat --animate --speed 40")
+end
+
 def send_text
+  title
   get_name
   get_message
   execute_text
